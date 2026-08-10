@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/submit-request.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/icon.svg">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo Abstract">
+                </a>
+                <span>|</span>
+                <a href="abstract-help.html">Help Center</a>
+            </div>
+            <div class="nav-right">
+                <a href="submit-request.html" class="submit">Submit a request</a>
+                <a href="#" class="signin">Sign in</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="text">
+                <p class="top-p">Support Center</p>
+                <h1>Submit a Request</h1>
+                <p>We typically respond within 4 business hours. For urgent issues, mark priority as Critical</p>
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="second-section-content">
+            <form action="" method="post">
+                <fieldset class="form-details">
+                    <legend>YOUR DETAILS</legend>
+                    <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="submit@request.com" required>
+                    </div>
+                </fieldset>
+                <fieldset class="request-details">
+                    <legend>REQUEST DETAILS</legend>
+                    <div class="top">
+                        <div class="category">
+                            <label for="category">Category</label>
+                            <select name="category" id="category" required>
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="technical-support">Technical support</option>
+                                <option value="billing">Billing</option>
+                                <option value="features-request">Features request</option>
+                                <option value="account">Account</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="priority" value="low" id="low" required>
+                            <label for="low">Low</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="priority" value="medium" id="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="priority" value="high" id="high">
+                            <label for="high">High</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="priority" value="critical" id="critical">
+                            <label for="critical">Critical</label>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <div class="subject">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Briefly describe your issue" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="description">
+                    <legend>DESCRIPTION</legend>
+                    <div class="desc-request">
+                    <label for="description">Describe your request</label>
+                    <textarea id="description" name="description" placeholder="include any relevant details, error messages, or steps to reproduce the issue..." required></textarea>
+                    </div>
+                    <div class="file">
+                        <label for="file">Attachment</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                </fieldset>
+                <div class="end-form">
+                    <p>Ticket #7635 will be assigned on submit</p>
+                    <button type="submit">Submit request</button>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="fcards">
+                <div class="fcard">
+                    <h3>Abstract</h3>
+                    <ul>
+                        <li><a href="#">Start Trial</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+                <div class="fcard">
+                    <h3>Ressources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Release Notes</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="fcard">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Dribble</a></li>
+                        <li><a href="#">Podcast</a></li>
+                    </ul>
+                </div>
+                <div class="fcard">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Legal</a></li>
+                    </ul>
+                    <h4>Contact Us</h4>
+                    <a href="#">info@abstract.com</a>
+                </div>
+            </div>
+            <div class="icone">
+                <img src="img/icon.svg" alt="">
+                <p>© Copyright 2023 Abstract Studio Design, Inc. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
